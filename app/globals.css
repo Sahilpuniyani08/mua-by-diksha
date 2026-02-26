@@ -1,26 +1,88 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  --color-background: #63405B; /* Deep Plum - the primary background */
+  --color-foreground: #E4D0D0; /* Nude Cream */
+  --color-muted: #B58DB6;      /* Lavender/Dusty Rose */
+  --color-primary: #E4D0D0;    /* Using Nude Cream as Primary for contrast */
+  --color-secondary: #120A10;  /* Deepest Plum - used for depth and contrast */
+  --color-accent: #B58DB6;     /* Lavender as accent */
+  --color-surface-alt: #3A2635; /* Lighter plum for surfaces */
+  --color-glass: rgba(228, 208, 208, 0.05);
+  --font-heading: var(--font-playfair);
+  --font-body: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  background: var(--color-background);
+  color: var(--color-foreground);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
+
+button{
+  cursor: pointer;
+}
+
+/* Base Fix for Dark/Light Section Transitions */
+.bg-foreground {
+  color: var(--color-background) !important;
+}
+
+
+
+/* Metallic Purple Text Effect */
+.metallic-text {
+  background: linear-gradient(
+    to bottom,
+    #E4D0D0 0%,
+    #B58DB6 45%,
+    #8D6288 50%,
+    #120A10 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 1px rgba(181, 141, 182, 0.3));
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #E4D0D0, #B58DB6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-btn {
+  background: linear-gradient(135deg, #B58DB6, #120A10);
+}
+
+.glass {
+  background: rgba(228, 208, 208, 0.03);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(228, 208, 208, 0.08);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #3A2635;
+  border-radius: 99px;
+  border: 4px solid transparent;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B58DB6;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
