@@ -159,13 +159,13 @@ export default function PortfolioSection() {
                   </div>
 
                   {/* Bottom Right Title Pill */}
-                  <div className="absolute bottom-4 left-4 ">
+                  {/* <div className="absolute bottom-4 left-4 ">
                     <div className="p-1 px-3 flex rounded-full border border-foreground/80 bg-white/10 backdrop-blur-sm">
                       <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-white">
                         {item.title}
                       </span>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </motion.div>
             ))}

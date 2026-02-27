@@ -5,5 +5,9 @@ export const FloralDecor = ({ className }: { className?: string }) => (
         <ellipse cx="100" cy="50" rx="15" ry="35" stroke="currentColor" strokeWidth="0.8" opacity="0.3" transform="rotate(45, 100, 100)" />
         <ellipse cx="100" cy="50" rx="15" ry="35" stroke="currentColor" strokeWidth="0.8" opacity="0.3" transform="rotate(90, 100, 100)" />
         <ellipse cx="100" cy="50" rx="15" ry="35" stroke="currentColor" strokeWidth="0.8" opacity="0.3" transform="rotate(135, 100, 100)" />
+        <ellipse cx="100" cy="50" rx="15" ry="35" stroke="currentColor" strokeWidth="0.8" opacity="0.3" transform="rotate(180, 100, 100)" />
+        <ellipse cx="100" cy="50" rx="15" ry="35" stroke="currentColor" strokeWidth="0.8" opacity="0.3" transform="rotate(225, 100, 100)" />
+        <ellipse cx="100" cy="50" rx="15" ry="35" stroke="currentColor" strokeWidth="0.8" opacity="0.3" transform="rotate(270, 100, 100)" />
+        <ellipse cx="100" cy="50" rx="15" ry="35" stroke="currentColor" strokeWidth="0.8" opacity="0.3" transform="rotate(315, 100, 100)" />
     </svg>
 );

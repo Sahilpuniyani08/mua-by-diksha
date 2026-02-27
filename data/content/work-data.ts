@@ -7,27 +7,27 @@ export const phoneNumber = "9529198538";
 export const services = [
     {
         id: "01",
-        title: "Bridal Artistry",
+        title: "Makeup Looks",
         description: "Exquisite makeup for your most precious moments. We create timeless looks tailored to your unique features and style.",
         image: m3,
 
 
         pricing: [
-            { label: "Signature Bridal", price: "$299" },
-            { label: "Elite Engagement", price: "$199" },
-            { label: "Global Destination", price: "$599" }
+            { label: "Party / Haldi / Mehandi", price: [799] },
+            { label: "Engagement / Reception", price: [1999, 3999] },
+            { label: "Bridal", price: [7999, 9999] }
         ]
     },
     {
         id: "02",
-        title: "Boutique Nail Art",
+        title: "Nail Extentions",
         description: "Miniature masterpieces crafted on your fingertips using premium techniques and high-end artisanal finishes.",
 
         image: n3,
         pricing: [
-            { label: "Gel Extension", price: "$89" },
-            { label: "Hand-Painted Art", price: "$120" },
-            { label: "Chrome Finish", price: "$75" }
+            { label: "Temporary Extentions", price: [999, 1299] },
+            { label: "Gel Extentions", price: [1099, 1499] },
+            { label: "Acrylic Extentions", price: [1499, 2199] }
         ]
     },
 

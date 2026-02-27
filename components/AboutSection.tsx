@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { fadeUp, vp, vpClose } from "@/lib/animations";
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
 import { Star } from "./common/Star";
 import { FloralDecor } from "./common/floral";
 import { SunriseButton } from "./common/SunriseButton";
@@ -31,7 +30,8 @@ export default function AboutSection() {
                             <motion.div
                                 initial={{ opacity: 0, rotate: -15, scale: 0.8 }}
                                 whileInView={{ opacity: 1, rotate: -12, scale: 1 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }}
+                                // transition={{ duration: 0.8, ease: "easeOut" }}
+                                whileHover={{rotate:-10, scale: 1.05}}
                                 className="inline-block px-5 py-1.5 border-2 border-background text-background font-black text-[10px] tracking-[0.2em] uppercase rounded-xl bg-white/10 backdrop-blur-sm  shadow-2xl shadow-primary/10"
                             >
                                 Artist

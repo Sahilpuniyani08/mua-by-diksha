@@ -1,7 +1,7 @@
 "use client";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, IndianRupee } from "lucide-react";
 import { SunriseButton } from "./common/SunriseButton";
 import { Star } from "./common/Star";
 import { FloralDecor } from "./common/floral";
@@ -103,7 +103,7 @@ function ServiceCard({
           className="flex flex-col gap-6"
         >
           <div className="flex flex-col sm:flex-row justify-between items-start gap-6">
-            <div className="max-w-45">
+            <div className=" max-w-70 md:max-w-38">
               <span className="text-[10px] font-bold tracking-[0.4em] uppercase text-muted mb-1 block">
                 0{service.id}
               </span>
@@ -113,7 +113,7 @@ function ServiceCard({
             </div>
 
             {/* Pricing Grid */}
-            <div className="flex-1 w-full md:max-w-50 ">
+            <div className="flex-1 w-full md:max-w-110 ">
               <div className="space-y-3">
                 {service.pricing.map((item, idx) => (
                   <div
@@ -125,7 +125,18 @@ function ServiceCard({
                     </span>
                     <div className="grow border-b border-dotted border-background mb-1 " />
                     <span className="font-heading text-base  font-bold text-background group-hover/item:text-secondary transition-colors duration-300">
-                      {item.price}
+                      <span>
+                        {item.price.map((p, i) => (
+                          <span key={i}>
+                            {i > 0 ? " - " : ""}
+                            <IndianRupee
+                              size={12}
+                              className="inline-block font-black  font-heading"
+                            />
+                            {p}
+                          </span>
+                        ))}
+                      </span>
                     </span>
                   </div>
                 ))}
@@ -133,7 +144,7 @@ function ServiceCard({
             </div>
           </div>
 
-          {/* Sunrise Animation Button (Pill Shape) */}
+        
           <div className="mt-2">
             <SunriseButton
               text="Book Now"
