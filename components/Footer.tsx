@@ -133,7 +133,7 @@ export default function Footer() {
                     <div className="pt-4 flex items-center gap-6">
                         <div className="h-px bg-background w-full  hidden md:flex" />
                         <p className="text-[10px] uppercase tracking-widest text-background/80 font-bold whitespace-nowrap">
-                            © 2024 DIKSHA PUNYANI. ALL RIGHTS RESERVED.
+                            © 2026 DIKSHA PUNYANI. ALL RIGHTS RESERVED.
                         </p>
                     </div>
                 </div>
