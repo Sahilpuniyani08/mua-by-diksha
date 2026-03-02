@@ -65,17 +65,17 @@ export default function TestimonialsSection() {
 
                                     {/* User Info */}
                                     <div className="flex items-center gap-5 text-left">
-                                        <div className="relative w-16 h-16 rounded-full overflow-hidden grayscale-[0.5] hover:grayscale-0 transition-all duration-500 ring-1 ring-foreground/10">
+                                        {/* <div className="relative w-16 h-16 rounded-full overflow-hidden grayscale-[0.5] hover:grayscale-0 transition-all duration-500 ring-1 ring-foreground/10">
                                             <Image
                                                 src={current.image}
                                                 alt={current.name}
                                                 fill
                                                 className="object-cover"
                                             />
-                                        </div>
+                                        </div> */}
                                         <div>
                                             <h4 className="font-body text-sm font-bold tracking-[0.2em] text-foreground uppercase">{current.name}</h4>
-                                            <p className="font-body text-xs text-foreground/40 mt-1">{current.email}</p>
+                                            {/* <p className="font-body text-xs text-foreground/40 mt-1">{current.email}</p> */}
                                         </div>
                                     </div>
                                 </div>
